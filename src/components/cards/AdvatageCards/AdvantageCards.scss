@@ -30,3 +30,17 @@
         color: #FFFFFF;
     }
 }
+
+@media only screen and (max-width: 360px) {
+    .slideshow {
+        height: 300px;
+    }
+
+    .slideshow-item {
+        margin-top: 5rem;
+        font-size: 1.5rem;
+        max-width: 80%;
+        margin-left: 10%;
+        color: #FFFFFF;
+    }
+}
