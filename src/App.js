@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom';
+import Navmenu from './components/Navmenu/Navmenu';
+import Home from './components/pages/Home/Home';
+import Services from './components/pages/Services/Services';
+import Equipment from './components/pages/Equipment/Equipment';
+import Contact from './components/pages/Contact/Contact';
 
-function App() {
+
+const App = ()  => {
+  const NavmenuWithRouter = withRouter(Navmenu)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <NavmenuWithRouter />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/services" exact component={Services} />
+          <Route path="/equipment" exact component={Equipment} />
+          <Route path="/contact" exact component={Contact} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 

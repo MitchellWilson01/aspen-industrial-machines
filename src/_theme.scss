@@ -1,0 +1,16 @@
+// Color Scheme
+$primary: #3FCAD8;
+$secondary: #8C61CB; // #84888C
+$tertiary: #84888C;
+$dark: #2B236D;
+$light: #F9F8F8;
+$success: #48B779;
+$info: #2B236D;
+$warning: #C5A741;
+$danger: #F44336;
+
+html {
+    background-color: $light;
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
