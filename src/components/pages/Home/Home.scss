@@ -41,8 +41,13 @@
     top: 7rem;
 }
 
-.home-image-button {
+.button-group {
+    display: flex;
     position: absolute;
+    top: 75%;
+}
+
+.home-image-button {
     font-size: 1.5rem !important;
     &:hover {
         color: #FFFFFF !important;
@@ -50,13 +55,58 @@
 }
 
 .learn-more-button {
+    margin-right: 10px;
     &:hover {
         background-color: $dark !important;
     }
 }
 
+.contact-button {
+    margin-left: 10px;
+}
+
 .briquetter-rentals {
     color: $primary;
+}
+
+.home-image-2 {
+    background-image: url(../../../images/triangles1.png);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-image-2-title {
+    font-size: 2rem;
+    padding-top: 1rem;
+    color: #FFFFFF;
+}
+
+.home-image-2-item {
+    width: 40%;
+    height: 20%;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border-style: none;
+}
+
+.long-text-title {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    font-size: 2rem;
+}
+
+.long-text-container {
+    max-width: 60%;
+    justify-content: center;
+    font-size: 1.25rem;
+    padding-left: 3rem;
 }
 
 @media only screen and (max-width: 875px) {
@@ -79,6 +129,17 @@
         font-size: 1rem;
         color: #FFFFFF;
         max-width: 75%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-image-2 {
+        background-image: url(../../../images/triangles1.png);
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+        justify-content: center;
         text-align: center;
     }
 }

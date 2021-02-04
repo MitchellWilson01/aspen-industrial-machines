@@ -16,7 +16,7 @@
 .service-card {
     min-height: 100%;
     max-height: 100%;
-    background-color: $light !important;
+    border-style: none !important;
 }
 
 .service-card-title {
@@ -48,5 +48,12 @@
         padding-left: 1%;
         text-align: center;
         padding-bottom: 2%;
+    }
+
+    .service-card {
+        min-height: 100%;
+        max-height: 100%;
+        border-style: none !important;
+        border-bottom-style: ridge !important;
     }
 }

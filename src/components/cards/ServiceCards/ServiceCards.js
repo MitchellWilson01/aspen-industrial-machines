@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardDeck } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import './ServiceCards.scss';
 
 
@@ -14,7 +14,7 @@ const ServiceCards = () => {
                                 <i className="fas fa-cogs"></i>
                             </div>
                         <Card.Text className="service-card-text">
-                            High-quality equipment rental at an affordable price
+                            Wide selection of equipment for rent at an affordable price
                         </Card.Text>
                     </Card>
                 </div>
