@@ -68,6 +68,13 @@
     margin-right: 5rem;
 }
 
+.nav-logo-text {
+    height: 50px;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
 .nav-brand,
 .nav-link,
 .nav-text {
@@ -77,8 +84,52 @@
 @media only screen and (max-width: 600px) {
     .nav-brand {
         padding-left: 0rem;
+        padding-right: 0px !important;
+        font-size: 1.25rem !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-brand {
+        padding-left: 0rem;
         padding-right: 2rem;
         font-size: 1.25rem !important;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .nav-logo-text {
+        height: 45px;
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .nav-logo-text {
+        height: 40px;
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .nav-logo-text {
+        height: 35px;
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .nav-logo-text {
+        height: 40px;
+        width: auto;
+        padding: 0px;
+        margin: 0px;
     }
 }
 
@@ -105,13 +156,8 @@
     }
 }
 
-@media only screen and (max-width: 386px) {
-    .nav-brand {
-        padding-left: 0rem;
-        padding-right: 2rem;
-        font-size: 1rem !important;
-    }
-}
+
+
 
 @media only screen and (max-width: 370px) {
     .nav-brand-aspen {

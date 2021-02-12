@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import logoWhiteText from '../../images/logoWhiteText.png';
 import leaf from '../../images/leaf.png';
 import './Navmenu.scss';
 
@@ -35,16 +36,7 @@ const Navmenu = () => {
         <>
             <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
                 <Navbar.Brand href="/" className="nav-brand">
-                    <div className="nav-brand-text-container">
-                        <div className="nav-brand-aspen">
-                            ASPEN INDUSTRIAL
-                        </div>
-                        <div className="nav-brand-machines">
-                            <div><hr className="nav-brand-line"/></div> 
-                            <div> &nbsp; MACHINES &nbsp; </div>
-                            <div><hr className="nav-brand-line"/></div>
-                        </div>
-                    </div>
+                    <img src={logoWhiteText} className="nav-logo-text" />
                 </Navbar.Brand>
                 <Navbar.Toggle className="nav-toggle" aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -62,3 +54,16 @@ const Navmenu = () => {
 }
 
 export default Navmenu;
+
+/*
+<div className="nav-brand-text-container">
+                        <div className="nav-brand-aspen">
+                            ASPEN INDUSTRIAL
+                        </div>
+                        <div className="nav-brand-machines">
+                            <div><hr className="nav-brand-line"/></div> 
+                            <div> &nbsp; MACHINES &nbsp; </div>
+                            <div><hr className="nav-brand-line"/></div>
+                        </div>
+                    </div>
+*/
