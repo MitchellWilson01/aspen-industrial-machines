@@ -2,67 +2,35 @@
 
 
 .home-image {
-    position: relative;
     background-color: $dark;
-    height: 450px;
+    height: 650px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .home-image-subtitle {
-    position: absolute;
-    top: 4rem;
-    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #FFFFFF;
 }
 
 .home-image-title {
-    position: absolute;
-    top: 5rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #FFFFFF;
+    text-align: center;
 } 
 
 .home-image-body {
-    position: absolute;
-    top: 11rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #FFFFFF;
-    max-width: 50%;
+    max-width: 55%;
     text-align: center;
-}
-
-.home-image-button-group {
-    position: absolute;
-    top: 7rem;
-}
-
-.button-group {
-    display: flex;
-    position: absolute;
-    top: 75%;
-}
-
-.home-image-button {
-    font-size: 1.5rem !important;
-    &:hover {
-        color: #FFFFFF !important;
-    }
-}
-
-.learn-more-button {
-    margin-right: 10px;
-    &:hover {
-        background-color: $dark !important;
-    }
-}
-
-.contact-button {
-    margin-left: 10px;
 }
 
 .briquetter-rentals {
@@ -70,7 +38,7 @@
 }
 
 .home-image-2 {
-    background-image: url(../../../images/triangles1.png);
+    background-color: $dark;
     background-size: cover;
     height: 400px;
     width: 100%;
@@ -95,27 +63,191 @@
     border-style: none;
 }
 
-.long-text-title {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-    padding-left: 3rem;
-    font-size: 2rem;
+.home-blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
 }
 
-.long-text-container {
+.home-blog-image-1 {
+    margin-bottom: 5rem;
+    height: 50%;
+    max-height: 50%;
+    max-width: 50%;
+}
+
+.home-blog-image-2 {
+    margin-bottom: 5rem;
+    height: 50%;
+    max-height: 50%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.home-blog-image-3 {
+    margin-bottom: 5rem;
+    height: 20%;
+    max-height: 20%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.home-image-rounded {
+    border-radius: 5%;
+}
+
+.home-blog-title-advantages {
+    max-width: 50%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $dark;
+}
+
+.home-blog-title-defintions {
     max-width: 60%;
-    justify-content: center;
-    font-size: 1.25rem;
-    padding-left: 3rem;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $dark;
+}
+
+.home-blog-subtitle {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.home-blog-spacer {
+    height: 20px;
+}
+
+.home-blog-list {
+    list-style-type: none;
+    margin: 0;
+    font-weight: 400;
+}
+
+.home-blog-definitions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+}
+
+.home-blog-definee {
+    width: 30% !important;
+    max-width: 30% !important;
+    margin-left: 14px;
+    color: $primary;
+}
+
+.home-blog-definition {
+    width: 65% !important;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.home-blog-list-bullet {
+    color: $primary;
+    margin-left: 14px;
+    width: 4% !important;
+    max-width: 4% !important;
+}
+
+.home-blog-list-row {
+    align-items: baseline;
+}
+
+.home-image-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.home-page-break {
+    width: 90% !important;
+    margin-bottom: 30px;
+}
+
+.advantage-text {
+    max-width: 89%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .home-image-body {
+        font-size: 1rem;
+        color: #FFFFFF;
+        max-width: 75%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 916px) {
+    .home-image-title {
+        align-content: center;
+        justify-content: center;
+        max-width: 95%;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #FFFFFF;
+    } 
+
+    .home-blog-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center !important;
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .home-blog-list {
+        list-style-type: none;
+        margin: 0;
+        font-weight: 400;
+        text-align: start;
+    }
+
+    .home-blog-image-1 {
+        margin-bottom: 2rem;
+        height: 75%;
+        max-height: 75%;
+        max-width: 75%;
+    }
+
+    .home-blog-image-3 {
+        margin-bottom: 2rem;
+        height: 20%;
+        max-height: 20%;
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .home-blog-title-advantages {
+        max-width: 95%;
+        margin-bottom: 5rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $dark;
+    }
+
+    .home-blog-title-defintions {
+        max-width: 95%;
+        margin-bottom: 5rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $dark;
+    }
 }
 
 @media only screen and (max-width: 875px) {
     .home-image-title {
-        position: absolute;
         align-content: center;
         justify-content: center;
         max-width: 95%;
-        top: 5rem;
         text-align: center;
         font-size: 3rem;
         font-weight: 700;
@@ -123,14 +255,24 @@
     } 
 }
 
-@media only screen and (max-width: 1100px) {
-    .home-image-body {
-        position: absolute;
-        top: 11rem;
-        font-size: 1rem;
-        color: #FFFFFF;
-        max-width: 75%;
-        text-align: center;
+@media only screen and (max-width: 830px) {
+    .home-blog-definitions {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row !important;
+    }
+    
+    .home-blog-definee {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0px;
+        color: $primary;
+    }
+    
+    .home-blog-definition {
+        width: 100% !important;
+        margin-bottom: 10px;
+        font-weight: 400;
     }
 }
 
@@ -142,5 +284,50 @@
         width: 100%;
         justify-content: center;
         text-align: center;
+    }    
+
+    .home-blog-list-bullet {
+        color: $primary;
+        margin-left: 0px !important;
+        width: 6% !important;
+        max-width: 6% !important;
+    }
+
+    .advantage-text {
+        max-width: 85%;
+    }
+
+    .home-blog-list {
+        list-style-type: none;
+        margin: 0;
+        font-weight: 400;
+        text-align: start;
+    }
+
+    .home-blog-image-1 {
+        margin-bottom: 2rem;
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .home-blog-image-3 {
+        margin-bottom: 2rem;
+        height: 20%;
+        max-height: 20%;
+        width: 90%;
+        max-width: 90%;
     }
 }
+
+@media only screen and (max-width: 425px) {
+    .home-image {
+        background-color: $dark;
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

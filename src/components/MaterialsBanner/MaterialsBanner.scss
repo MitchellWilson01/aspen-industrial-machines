@@ -1,0 +1,71 @@
+@import '../../theme';
+
+
+.materials-banner-background {
+    background-color: $secondary;
+    height: 625px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.materials-banner-title {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+.materials-banner-collection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 95%;
+}
+
+.materials-banner-row {
+    width: 100%;
+    margin: 0px 0px 15px 0px!important;
+    padding: 0px !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.materials-banner-image {
+    width: 22%;
+    max-width: 22%;
+    border-radius: 5%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .materials-banner-background {
+        height: 575px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .materials-banner-background {
+        height: 525px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .materials-banner-background {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .materials-banner-background {
+        height: 475px;
+    }
+}
+

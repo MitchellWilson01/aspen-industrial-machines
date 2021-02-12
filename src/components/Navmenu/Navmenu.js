@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
+import leaf from '../../images/leaf.png';
 import './Navmenu.scss';
 
 
@@ -22,13 +23,28 @@ const Navmenu = () => {
                             </Navbar.Text>
                         </Nav>
 
+    const aspenLeaf =   <Nav className="ml-auto">
+                            <Navbar.Text className="nav-text">
+                                <img src={leaf} className="nav-leaf-logo"/>
+                            </Navbar.Text>
+                        </Nav>
+
     window.addEventListener("resize", handleResize);
 
     return (
         <>
             <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
                 <Navbar.Brand href="/" className="nav-brand">
-                    Aspen Industrial Machines
+                    <div className="nav-brand-text-container">
+                        <div className="nav-brand-aspen">
+                            ASPEN INDUSTRIAL
+                        </div>
+                        <div className="nav-brand-machines">
+                            <div><hr className="nav-brand-line"/></div> 
+                            <div> &nbsp; MACHINES &nbsp; </div>
+                            <div><hr className="nav-brand-line"/></div>
+                        </div>
+                    </div>
                 </Navbar.Brand>
                 <Navbar.Toggle className="nav-toggle" aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -38,7 +54,7 @@ const Navmenu = () => {
                         <Nav.Link href="/equipment" className="nav-link">Equipment</Nav.Link>
                         <Nav.Link href="/contact" className="nav-link">Contact</Nav.Link>
                     </Nav>
-                    {mobile ? null : leafLogo}
+                    {mobile ? null : aspenLeaf}
                 </Navbar.Collapse>
             </Navbar>
         </>

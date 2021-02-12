@@ -9,25 +9,26 @@ const AdvantageCards = () => {
             <div className="slideshow-container">
                 <Carousel className="slideshow">
                     <Carousel.Item className="slideshow-item" interval={2000}>
-                        Briquetting increases the value of your metal chips
+                        Briquetting <span className="briquetter-rentals">increases the value</span> of your metal chips
                     </Carousel.Item>
                     <Carousel.Item className="slideshow-item" interval={2000}>
-                        Allows for recycling of coolant fluids
+                        <span className="briquetter-rentals">Allows for recycling</span> of coolant fluids
                     </Carousel.Item>
                     <Carousel.Item className="slideshow-item" interval={2000}>
-                        Little residual coolant during transportation
+                        <span className="briquetter-rentals">Little residual coolant</span> during transportation
                     </Carousel.Item>
                     <Carousel.Item className="slideshow-item" interval={2000}>
-                        Briquetters eliminate the need for centrifugal dryers
+                        Briquetters <span className="briquetter-rentals">eliminate</span> the need for centrifugal dryers
                     </Carousel.Item>
                     <Carousel.Item className="slideshow-item" interval={2000}>
-                        Handling and storage costs are lowered as a result of the volume reduction
+                        Handling and storage costs are <span className="briquetter-rentals">lowered</span> 
+                        as a result of the <span className="briquetter-rentals">volume reduction</span>
                     </Carousel.Item>
                     <Carousel.Item className="slideshow-item" interval={2000}>
-                        Allows for accurate weight of briquettes produced
+                        Allows for <span className="briquetter-rentals">accurate weight</span> of briquettes produced
                     </Carousel.Item>
                     <Carousel.Item className="slideshow-item" interval={2000}>
-                        Lower transport costs
+                        Lower <span className="briquetter-rentals">transport costs</span>
                     </Carousel.Item>
                 </Carousel>
             </div>

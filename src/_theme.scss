@@ -1,16 +1,26 @@
-// Color Scheme
-$primary: #3FCAD8;
-$secondary: #8C61CB; // #84888C
-$tertiary: #84888C;
-$dark: #2B236D;
-$light: #F9F8F8;
-$success: #48B779;
-$info: #2B236D;
-$warning: #C5A741;
+// Color Scheme Aspen
+$primary: #FFA500;
+$secondary: #B2B68B; // #84888C
+$tertiary: #AA5143;
+$dark: #2D4C50;
+$light: #EDF3EF;
+$success: #7fba3d;
+$info: #1c3034;
+$warning: #fdaa05;
 $danger: #F44336;
 
+
 html {
-    background-color: $light;
+    background-color: #FFFFFF;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
 }
 
 @import "node_modules/bootstrap/scss/bootstrap";

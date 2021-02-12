@@ -20,12 +20,12 @@ const ServiceCards = () => {
                 </div>
                 <div className="service-card-item">
                     <Card className="service-card">
-                        <Card.Title className="service-card-title">Repair & Refurbishing</Card.Title>
+                        <Card.Title className="service-card-title">Repairs & Refurbishing</Card.Title>
                             <div className="service-card-icon">
                                 <i className="fas fa-wrench"></i>
                             </div>
                         <Card.Text className="service-card-text">
-                            Third party repair services for all major equipment manufactures
+                            Third party repair services for all major manufactures
                         </Card.Text>
                     </Card>
                 </div>

@@ -1,0 +1,32 @@
+@import '../../theme';
+
+
+.materials-banner-mobile-background {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: $secondary;
+    height: 1000px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.materials-banner-mobile-title {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+.materials-banner-mobile-image-container {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 320px) {
+    .materials-banner-mobile-background {
+        height: 1050px;
+    }
+}
+

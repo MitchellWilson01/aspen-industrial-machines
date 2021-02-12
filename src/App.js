@@ -5,6 +5,7 @@ import Home from './components/pages/Home/Home';
 import Services from './components/pages/Services/Services';
 import Equipment from './components/pages/Equipment/Equipment';
 import Contact from './components/pages/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 
 const App = ()  => {
@@ -20,6 +21,7 @@ const App = ()  => {
           <Route path="/equipment" exact component={Equipment} />
           <Route path="/contact" exact component={Contact} />
         </Switch>
+        <Footer />
       </Router>
     </>
   );

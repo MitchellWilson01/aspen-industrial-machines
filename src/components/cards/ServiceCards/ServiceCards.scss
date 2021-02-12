@@ -5,8 +5,8 @@
     display: flex;
     justify-content: space-between;
     padding: 15px 20px;
+    margin-bottom: 0rem;
 }
-
 
 .service-card-item {
     max-width: 19%;
@@ -26,13 +26,14 @@
 
 .service-card-icon {
     font-size: 3rem;
-    color: $tertiary;
+    color: $primary;
 }
 
 .service-card-text {
     padding-bottom: 0.5rem;
     padding-left: 5%;
     max-width: 95%;
+    font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 875px) {
