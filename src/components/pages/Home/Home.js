@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Button, ButtonGroup } from 'react-bootstrap';
 import HomeForm from '../../Forms/HomeForm/HomeForm';
 import ServiceCards from '../../cards/ServiceCards/ServiceCards';
 import AdvantageCards from '../../cards/AdvatageCards/AdvatageCards';
@@ -16,25 +15,26 @@ import leaf from '../../../images/leaf.png';
 import './Home.scss';
 
 const Home = () => {
-    const initialResize = window.innerWidth <= 829 ? true : false;
-    const initialMobileView = window.innerWidth <= 915 ? true : false;
+    const initialFirstResize = window.innerWidth <= 915 ? true : false;
+    const initialSecondResize = window.innerWidth <= 829 ? true : false;
 
-    const [resize, setResize] = useState(initialResize);
-    const [mobileView, setMobileView] = useState(initialMobileView);
+    const [firstResize, setFirstResize] = useState(initialFirstResize);
+    const [secondResize, setSecondResize] = useState(initialSecondResize);
 
     const handleResize = () => {
-        if (window.innerWidth <= 829) {
-            setResize(true);
-            setMobileView(true);
-        } else {
-            setResize(false);
-            if (window.innerWidth <= 915) {
-                setMobileView(true);
+        if (window.innerWidth <= 915) {
+            setFirstResize(true);
+            if (window.innerWidth <= 829) {
+                setSecondResize(true);
             } else {
-                setMobileView(false);
+                setSecondResize(false);
             }
+        } else {
+            setFirstResize(false);
+            setSecondResize(false);
         }
     }
+
 
     const homeBody =    <div className="home-image-body">
                             Aspen Rentals has years of experience in understanding how to help you with 
@@ -168,14 +168,14 @@ const Home = () => {
                                     common terms with definitions that may be helpful. Some may seem elementary, 
                                     but we have found people who have appreciated the information.
                                     <div className="home-blog-spacer"></div>
-                                    {resize ? defintionsListColumn : defintionsListRow}
+                                    {secondResize ? defintionsListColumn : defintionsListRow}
                                 </div>
 
     const definitionsSubtitleMobile =   <div className="home-blog-subtitle">
                                             Aspen Rentals feels it is good to support communications by providing a list of 
                                             common terms with definitions.
                                             <div className="home-blog-spacer"></div>
-                                            {resize ? defintionsListColumn : defintionsListRow}
+                                            {secondResize ? defintionsListColumn : defintionsListRow}
                                         </div>
 
     const homeImageColumn = <div className="home-image-column">
@@ -184,6 +184,7 @@ const Home = () => {
                             </div>
 
     const homeImageSingle = <img src={pucks} className="home-blog-image-3 home-image-rounded"/>
+
 
     window.addEventListener("resize", handleResize);
 
@@ -208,11 +209,11 @@ const Home = () => {
                         <span className="home-title-space">&nbsp;</span>
                     </div>
                 </div>
-                {mobileView ? null : homeBody}
+                {firstResize ? null : homeBody}
                 <HomeForm />
             </div>
             <ServiceCards />
-            {resize ? null : <hr className="home-page-break"/>}
+            {secondResize ? null : <hr className="home-page-break"/>}
             <div className="home-blog-container">
                 <img src={thumbnail} className="home-blog-image-1"/>
                 <div className="home-blog-title-advantages">
@@ -273,12 +274,12 @@ const Home = () => {
                         </ul>  
                     </div>
                 </div>
-                {mobileView ? homeImageSingle : null}
+                {firstResize ? homeImageSingle : null}
                 <div className="home-blog-title-defintions">
                     COMMON DEFINTIONS
-                    {resize ? definitionsSubtitleMobile : definitionsSubtitle}
+                    {secondResize ? definitionsSubtitleMobile : definitionsSubtitle}
                 </div>
-                {mobileView ? null : homeImageColumn}
+                {firstResize ? null : homeImageColumn}
             </div>
             {/*mobileView ? <MaterialsBannerMobile /> : <MaterialsBanner />*/}
             

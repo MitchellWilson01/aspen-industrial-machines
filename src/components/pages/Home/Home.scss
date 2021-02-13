@@ -2,7 +2,13 @@
 
 
 .home-image {
-    background-color: $dark;
+    //background-color: $dark;
+    background-image: linear-gradient(
+                        rgba(45, 76, 80, 0.625), 
+                        rgba(45, 76, 80, 0.625)
+                    ), url("../../../images/metalBackground.png");
+    background-size: 100% 100%;
+    backdrop-filter: 75%;
     height: 650px;
     width: 100%;
     display: flex;

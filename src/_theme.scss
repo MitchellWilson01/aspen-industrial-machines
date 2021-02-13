@@ -1,24 +1,22 @@
-// Color Scheme Aspen
+// Color Palette
 $primary: #FFA500;
-$secondary: #B2B68B; // #84888C
+$secondary: #B2B68B; //B2B68B
 $tertiary: #AA5143;
-$dark: #2D4C50;
+$dark: #2D4C50; // 2D4C50
 $light: #EDF3EF;
 $success: #7fba3d;
 $info: #1c3034;
 $warning: #fdaa05;
 $danger: #F44336;
 
-
 html {
-    background-color: #FFFFFF;
     max-width: 100%;
     width: auto;
 }
 
 body {
     overflow-x: hidden;
-    max-width: 100vw;
+    max-width: 100%;
     width: auto;
 }
 
