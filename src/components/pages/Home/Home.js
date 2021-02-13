@@ -34,7 +34,6 @@ const Home = () => {
                 setMobileView(false);
             }
         }
-
     }
 
     const homeBody =    <div className="home-image-body">
@@ -191,10 +190,22 @@ const Home = () => {
     return (
         <>
             <div className="home-image">
-                <div>
+                <div className="home-image-title-container">
                     <div className="home-image-subtitle">PROVIDING THE BEST</div>
                     <div className="home-image-title">
-                        INDUSTRIAL <span className="briquetter-rentals"> BRIQUETTER RENTALS </span>
+                        <span className="home-title-space">&nbsp;</span>
+                            INDUSTRIAL
+                        <span className="home-title-space">&nbsp;</span>
+                    </div>
+                    <div className="home-image-title briquetter-rentals">
+                        <span className="home-title-space">&nbsp;</span>
+                            BRIQUETTER
+                        <span className="home-title-space">&nbsp;</span>
+                    </div>
+                    <div className="home-image-title briquetter-rentals">
+                        <span className="home-title-space">&nbsp;</span>
+                            RENTALS
+                        <span className="home-title-space">&nbsp;</span>
                     </div>
                 </div>
                 {mobileView ? null : homeBody}
@@ -270,6 +281,7 @@ const Home = () => {
                 {mobileView ? null : homeImageColumn}
             </div>
             {/*mobileView ? <MaterialsBannerMobile /> : <MaterialsBanner />*/}
+            
         </>
     );
 }
@@ -281,3 +293,18 @@ export default Home;
                 <AdvantageCards />
             </div>
 */
+
+/*
+<div className="home-image-subtitle">PROVIDING THE BEST</div>
+                    <div className="home-image-title">
+                        INDUSTRIAL <span className="briquetter-rentals">BRIQUETTER RENTALS </span>
+                    </div>
+*/
+
+/*
+<div className="home-image-subtitle">PROVIDING THE BEST</div>
+                    <div className="home-image-title ind">INDUSTRIAL</div>
+                    <div className="home-image-title indy briquetter-rentals">BRIQUETTER</div>
+                    <div className="home-image-title briquetter-rentals">RENTALS</div>
+*/
+

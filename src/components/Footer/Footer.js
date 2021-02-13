@@ -1,10 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import logoWhite from '../../images/logoWhite.png';
 import './Footer.scss';
 
 
 const Footer = () => {
+    const initialResize = window.innerWidth <= 829 ? true : false;
+    
+    const [resize, setResize] = useState(initialResize);
+
+    const handleResize = () => {
+        if (window.innerWidth <= 835) {
+            setResize(true);
+        } else {
+            setResize(false);
+        }
+    }
+
+    const footerLogo =  <div className="footer-logo-container">
+                            <img src={logoWhite} className="footer-logo" />
+                        </div>
+    
+    const footerButtons =   <div className="footer-button-container">
+                                <Button className="footer-button footer-contact-button" variant="outline-primary">
+                                    Contact
+                                </Button>
+                                <Button className="footer-button footer-services-button" variant="primary">
+                                    Services
+                                </Button>
+                            </div>
+
+    window.addEventListener("resize", handleResize);
+
     return (
         <>
             <div className="footer">
@@ -22,17 +49,8 @@ const Footer = () => {
                         2021 - Aspen Industrial Machines
                     </div>
                 </div>
-                <div className="footer-logo-container">
-                    <img src={logoWhite} className="footer-logo" />
-                </div>
-                <div className="footer-button-container">
-                    <Button className="footer-button footer-contact-button" variant="outline-primary">
-                        Contact
-                    </Button>
-                    <Button className="footer-button footer-services-button" variant="primary">
-                        Services
-                    </Button>
-                </div>
+                {resize ? null : footerLogo}
+                {resize ? null : footerButtons}
             </div>
         </>
     )

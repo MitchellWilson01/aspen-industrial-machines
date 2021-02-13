@@ -126,7 +126,7 @@
 
 @media only screen and (max-width: 325px) {
     .nav-logo-text {
-        height: 40px;
+        height: 32px;
         width: auto;
         padding: 0px;
         margin: 0px;
@@ -188,5 +188,9 @@
         padding-right: 2rem;
         font-size: 0.8rem !important;
     }
+}
+
+@media only screen and (max-width: 325px) {
+    
 }
 

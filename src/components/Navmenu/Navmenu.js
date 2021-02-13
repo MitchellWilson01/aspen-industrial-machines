@@ -34,7 +34,7 @@ const Navmenu = () => {
 
     return (
         <>
-            <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+            <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="nav-bar-main">
                 <Navbar.Brand href="/" className="nav-brand">
                     <img src={logoWhiteText} className="nav-logo-text" />
                 </Navbar.Brand>

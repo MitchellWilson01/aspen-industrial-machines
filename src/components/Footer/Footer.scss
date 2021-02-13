@@ -35,6 +35,8 @@
 
 .footer-button-container {
     width: 20%;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-button {
@@ -62,6 +64,42 @@
 .footer-logo {
     height: 145px;
     width: auto;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1050px) {
+    .footer-contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+    .footer-logo-container {
+        width: 0%;
+        margin-left: 0%;
+        display: flex;
+    }
+
+    .footer-button-container {
+        width: 40%;
+        align-items: flex-end;
+    }
+
+    .footer-button {
+        width: 51%;
+        height: 50px;
+        font-size: 1.5rem !important;
+        align-content: center;
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    .footer-contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -71,9 +109,12 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 355px) {
     .footer {
         font-size: 0.75rem;
-        height: 50px;
+        height: 60px;
     }
+
+
 }
+

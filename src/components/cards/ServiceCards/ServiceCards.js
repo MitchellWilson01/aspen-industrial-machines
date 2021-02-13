@@ -14,18 +14,7 @@ const ServiceCards = () => {
                                 <i className="fas fa-cogs"></i>
                             </div>
                         <Card.Text className="service-card-text">
-                            Wide selection of equipment for rent at an affordable price
-                        </Card.Text>
-                    </Card>
-                </div>
-                <div className="service-card-item">
-                    <Card className="service-card">
-                        <Card.Title className="service-card-title">Repairs & Refurbishing</Card.Title>
-                            <div className="service-card-icon">
-                                <i className="fas fa-wrench"></i>
-                            </div>
-                        <Card.Text className="service-card-text">
-                            Third party repair services for all major manufactures
+                            Wide selection of affordable equipment
                         </Card.Text>
                     </Card>
                 </div>
@@ -36,18 +25,18 @@ const ServiceCards = () => {
                                 <i className="fas fa-toolbox"></i>
                             </div>
                         <Card.Text className="service-card-text">
-                            Custom modifications of equipment to meet customer needs
+                            Custom modifications of equipment
                         </Card.Text>
                     </Card>
                 </div>
                 <div className="service-card-item">
                     <Card className="service-card">
-                        <Card.Title className="service-card-title">OEM & Specialty Parts</Card.Title>
+                        <Card.Title className="service-card-title">Repairs & Refurbishing</Card.Title>
                             <div className="service-card-icon">
-                                <i className="fas fa-industry"></i>
+                                <i className="fas fa-wrench"></i>
                             </div>
                         <Card.Text className="service-card-text">
-                            Genuine parts from major manufacturers
+                            Third party repair services for major manufactures
                         </Card.Text>
                     </Card>
                 </div>
@@ -59,6 +48,17 @@ const ServiceCards = () => {
                             </div>
                         <Card.Text className="service-card-text">
                             Transfer fixed units onto trailers
+                        </Card.Text>
+                    </Card>
+                </div>
+                <div className="service-card-item">
+                    <Card className="service-card">
+                        <Card.Title className="service-card-title">OEM & Specialty Parts</Card.Title>
+                            <div className="service-card-icon">
+                                <i className="fas fa-industry"></i>
+                            </div>
+                        <Card.Text className="service-card-text">
+                            Genuine parts from major manufacturers
                         </Card.Text>
                     </Card>
                 </div>
