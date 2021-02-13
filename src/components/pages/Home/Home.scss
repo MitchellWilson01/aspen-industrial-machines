@@ -2,11 +2,16 @@
 
 
 .home-image {
-    //background-color: $dark;
+    /*
     background-image: linear-gradient(
                         rgba(45, 76, 80, 0.625), 
                         rgba(45, 76, 80, 0.625)
                     ), url("../../../images/metalBackground.png");
+    */
+    background-image: linear-gradient(
+        rgba(31, 53, 56, 0.65), 
+        rgba(31, 53, 56, 0.65)
+    ), url("../../../images/metalBackground.png");
     background-size: 100% 100%;
     backdrop-filter: 75%;
     height: 650px;
@@ -27,7 +32,7 @@
 
 .home-image-title {
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 900;
     color: #FFFFFF;
     text-align: center;
 } 
@@ -37,6 +42,7 @@
     color: #FFFFFF;
     max-width: 55%;
     text-align: center;
+    font-weight: 300;
 }
 
 .briquetter-rentals {
@@ -108,7 +114,7 @@
     max-width: 50%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 900;
     color: $dark;
 }
 
@@ -116,13 +122,14 @@
     max-width: 60%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 900;
     color: $dark;
 }
 
 .home-blog-subtitle {
     font-size: 1.5rem;
     color: #000000;
+    font-weight: 500;
 }
 
 .home-blog-spacer {
@@ -132,7 +139,7 @@
 .home-blog-list {
     list-style-type: none;
     margin: 0;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .home-blog-definitions {
@@ -146,12 +153,13 @@
     max-width: 30% !important;
     margin-left: 14px;
     color: $primary;
+    font-weight: 500;
 }
 
 .home-blog-definition {
     width: 65% !important;
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .home-blog-list-bullet {
