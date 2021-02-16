@@ -4,6 +4,7 @@ import ServiceCards from '../../cards/ServiceCards/ServiceCards';
 import AdvantageCards from '../../cards/AdvatageCards/AdvatageCards';
 import MaterialsBanner from '../../MaterialsBanner/MaterialsBanner';
 import MaterialsBannerMobile from '../../MaterialsBannerMobile/MaterialsBannerMobile';
+import FAQ from '../../FAQ/FAQ';
 
 import thumbnail from '../../../images/thumbnail.jpg';
 import picture7 from '../../../images/picture7.png';
@@ -282,6 +283,7 @@ const Home = () => {
                 {firstResize ? null : homeImageColumn}
             </div>
             {/*mobileView ? <MaterialsBannerMobile /> : <MaterialsBanner />*/}
+            <FAQ />
             
         </>
     );
