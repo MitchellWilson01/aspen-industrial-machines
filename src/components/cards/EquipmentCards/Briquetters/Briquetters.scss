@@ -1,0 +1,14 @@
+@import '../../../../theme';
+
+.belt-presses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.belt-presses-card {
+    width: 48%;
+    height: 100px !important;
+}
